@@ -1,7 +1,21 @@
-代码文件在10.26.1.1 /xsdata1/diffusion/D4R_total/src
-# 训练部分
-1. 修改src/config.py中的参数信息
-2. 运行src/preprocessing.serial.py，此函数会对原始的lammpstrj进行预处理，这项处理会输出预处理之后的输入文件与输出文件，分别为/temp_data/下的feature_inputs.pt与target.py文件
-3. 运行src/D4R_AFA_training.py， 此函数会根据给定的feature_input.pt与target.py文件进行模型训练，训练的输出结果是一个对应的模型文件,为/pretrained_model下的serial_model.pth文件
-# 使用部分
-1. 在src/model_prediction.ipynb文件中举例了使用，对应的方法为先输入某一帧的系统信息文件，包括对应的atom_types与atom_coords，即原子类型与对应的原子坐标，该模型最终会输出下一帧的原子坐标。此处我们认为原子类型是保持不变的。
+# Towards AI-embedded Metaverse Chemistry Laboratory
+
+This README provides instructions for setting up and using the code for the D4R Total project, located at `10.26.1.1 /xsdata1/diffusion/D4R_total/src`.
+
+## Training Part
+
+To train the model, follow these steps:
+
+1. **Modify Configuration**: Edit `src/config.py` to update the parameter information as per your requirements.
+
+2. **Preprocessing**: Run `src/preprocessing.serial.py`. This script preprocesses the original `lammpstrj` files. The preprocessing step will output the processed input and output files, which are `feature_inputs.pt` and `target.py`, located in the `/temp_data/` directory.
+
+3. **Model Training**: Execute `src/D4R_AFA_training.py`. This script uses the `feature_input.pt` and `target.py` files for model training. The output of the training process is a model file named `serial_model.pth`, which can be found in the `/pretrained_model` directory.
+
+## Usage
+
+For using the trained model:
+
+1. **Model Prediction Example**: Refer to `src/model_prediction.ipynb`. This notebook demonstrates how to use the model. You need to input the system information file of a specific frame, including `atom_types` and `atom_coords` (the types and coordinates of the atoms). The model will output the atomic coordinates for the next frame. Note that the atom types are assumed to remain constant.
+
+For further assistance or queries, please refer to the documentation or contact the project maintainers.
