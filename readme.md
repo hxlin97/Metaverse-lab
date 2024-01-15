@@ -1,6 +1,6 @@
 # Towards AI-embedded Metaverse Chemistry Laboratory
 
-This README provides instructions for setting up and using the code for the D4R Total project, located at `10.26.1.1 /xsdata1/diffusion/D4R_total/src`.
+This README provides instructions for setting up and using the code for the D4R Total project.
 
 ## Training Part
 
