@@ -34,7 +34,9 @@ For using the trained model:
 
 For further assistance or queries, please refer to the documentation or contact the project maintainers.
 
-2. **Web Presentation**: Refer to `src/web_utilize.py`. You may use the code `streamlit run src/web_utilize.py`.
+2. **Web Presentation**: Refer to `src/web_utilize.py`. You may use the code `streamlit run src/web_utilize.py`. The expected output is:
+![image](https://github.com/hxlin97/Metaverse-lab/assets/58459755/6969fdba-67fd-4ed0-8d77-ff50d0345dd7)
+You may follow the instruction on this figure to how to manipulate.
 
 ## Unity Interface
 **Hardware**:
