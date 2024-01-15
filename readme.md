@@ -14,7 +14,7 @@ OR you may use `src/environment.yml`
 
 ## Part 1: the training of our proposed AI model
 
-To train the model, follow these steps:
+Before running the training of this code, please first place the trajectory file in `dataset` folder. The exact trajectory file is too large and we cannot upload it to github. Current files can only serve as an example. To train the model, follow these steps:
 
 1. **Modify Configuration**: Edit `src/config.py` to update the parameter information as per your requirements.
 
