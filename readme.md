@@ -1,4 +1,5 @@
 # Towards AI-embedded Metaverse Chemistry Laboratory
+# Please view the master branch
 
 This README provides instructions for setting up and using the code for the AI-embedded Metaverse Chemistry Laboratory.
 
