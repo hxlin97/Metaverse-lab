@@ -18,9 +18,9 @@ Visual Studio 2022 with Unity development package: Visual Studio Tools for Unity
 ## Physics-endorsed slice generation model
 **Part 1: the training of our proposed AI model**
 
-Before running the training of this code, please first place the trajectory file in `dataset` folder. The exact trajectory file is too large and we cannot upload it to github. Current files can only serve as an example. To train the model, follow these steps:
+Before running the training of this code, please first place the trajectory file in `dataset` folder. The exact trajectory file is too large and we cannot upload it to github. Current files can only serve as an example. You may use your own dataset. To train the model, follow these steps:
 
-1. **Modify Configuration**: Edit `src/config.py` to update the parameter information as per your requirements. We have provided an example, the input trajectory is `dataset/example.lammpstrj`. The corresponding calculated results are `temp_data/example` and `pretrained_model/example.pth`. Notice that this can only serve as an example for utilizing our codes.
+1. **Modify Configuration**: Edit `src/config.py` to update the parameter information as per your requirements. We have provided an example, the input trajectory is `dataset/example.lammpstrj`. If you want to use your own dataset, please rename it as `example.lammpstrj` and then place it in the folder `dataset`. The corresponding calculated results are `temp_data/example` and `pretrained_model/example.pth`. Notice that the provided data can only serve as an example for utilizing our codes.
 
 2. **Preprocessing**: First, open the python file `dataset/sort_atoms.py`, then revise the last line. Currently it is `sort_and_process_file('dump-8.reax.mgNO3', 'mgno3_8.lammpstrj')`, please revise the first parameter as the input trajectory file, and the second parameter as the output filename. This output filename should match the description in `src/config.py`. Run `src/preprocessing.serial.py`. This script preprocesses the original `lammpstrj` files. The preprocessing step will output the processed input and output files, which are `feature_inputs.pt` , `atom_coords.pt`, `atom_types.pt`, `box_list.pt` and `target.py`, located in the `/temp_data/` directory. These files are used in the future computaion.
 
@@ -32,11 +32,8 @@ For using the trained model:
 
 1. **Model Prediction Example**: Refer to `src/model_prediction.ipynb`. This notebook demonstrates how to use the model. You need to input the system information file of a specific frame, including `atom_types` and `atom_coords` (the types and coordinates of the atoms). The model will output the atomic coordinates for the next frame. Note that the atom types are assumed to remain constant.
 
-For further assistance or queries, please refer to the documentation or contact the project maintainers.
-
-2. **Web Presentation**: Refer to `src/web_utilize.py`. You may use the code `streamlit run src/web_utilize.py`. The expected output is:
+2. **Web Presentation**: Refer to `src/web_utilize.py`. Remember to put all the output data inside the folder `calculated_results`. You may use the code `streamlit run src/web_utilize.py`. The expected output is:
 ![image](https://github.com/hxlin97/Metaverse-lab/assets/58459755/1ac5fb88-0d4f-4667-bb30-2f9a6037c571)
-
 
 You may follow the instruction on this figure to how to manipulate.
 
