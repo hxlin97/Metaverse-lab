@@ -1,8 +1,9 @@
 # Towards AI-embedded Metaverse Chemistry Laboratory
 
-This README provides instructions for setting up and using the code for the D4R Total project.
+This README provides instructions for setting up and using the code for the AI-embedded Metaverse Chemistry Laboratory.
+![image](https://github.com/hxlin97/Metaverse-lab/assets/58459755/a83c28c5-6967-4f5e-ad3f-a2dd0652c6fd)
 
-## Training Part
+## Part 1: the training of our proposed AI model
 
 To train the model, follow these steps:
 
@@ -12,7 +13,7 @@ To train the model, follow these steps:
 
 3. **Model Training**: Execute `src/D4R_AFA_training.py`. This script uses the `feature_input.pt` and `target.py` files for model training. The output of the training process is a model file named `serial_model.pth`, which can be found in the `/pretrained_model` directory.
 
-## Usage
+## Part 2: the implementation of our model
 
 For using the trained model:
 
