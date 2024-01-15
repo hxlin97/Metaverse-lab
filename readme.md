@@ -40,6 +40,7 @@ For further assistance or queries, please refer to the documentation or contact 
 **Hardware**:
 HTC-VIVE with a pair of joysticks
 Beitong Asura2: BTP-2175S2 LB1
+
 ![image](https://github.com/hxlin97/Metaverse-lab/assets/114046154/0e948aca-e433-4a43-a4f3-5fb54d81fc30)
 Figure 1. View of Beitong Asura2 Joysticks.
 
