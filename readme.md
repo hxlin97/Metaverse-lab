@@ -51,22 +51,7 @@ Figure 1. View of Beitong Asura2 Joysticks.
 **AI-Supervisor Plugin**
 We have added the AI-supervisor plugin as well as the atomic slice generation module. The initial interface is illustrated in Figure 2 (a). The AI-supervisor region lies at the left-hand side of the of interface. Users can interact with AI-supervisor with their own OpenAI-API key. The middle part is the forcefield Tensor setting region. Compared to the previous version, we have made the Tensor asymmetric to expand the parameter space. The atomic slice generation module is on the right-hand side. Both macro- and microscopic view of physical chemistry process (e.g. solvation process of copper sulfate tetrahydrate, etc.) can be observed in the interface. 
 
-Figure 2 (b) describes the working state of the interface. The user will first search the experiment data through AI-supervisor. The user can input research field, paper title of DOI to find the information of the article. In the figure, the demo dialogue is:
-
-User: Give me some research directions I can dig in based on the paper 10.1039/C7TA00203C. 
-AI-supervisor: Based on the paper titled "Performance improvement of perovskite solar cells by employing a CdSe quantum dot/PCBM composite as an electron transport layer" (DOI: 10.1039/C7TA00203C), there are several research directions that can be explored.
-
-Investigating the performance enhancement: The paper reports improved performance of perovskite solar cells by using a CdSe quantum dot/PCBM composite as the electron transport layer. Further research can focus on understanding the underlying mechanisms behind this enhancement, such as charge transport and recombination processes. This could involve experimental studies, theoretical modeling, or device simulations.
-
-Optimization of composite materials: The study involves the use of a CdSe quantum dot/PCBM composite. More investigations can be conducted to optimize the composition and properties of the composite material. This could include exploring different combinations of quantum dots and organic materials, as well as tuning their size, shape, and surface characteristics for better charge transport and interface engineering.
-
-Large-scale manufacturing: The paper mentions large-scale first-principles calculations, indicating the potential for scaling up the production of perovskite solar cells. Further research can focus on developing efficient and cost-effective manufacturing processes for these composite materials, addressing challenges such as scalability, stability, and reproducibility.
-
-Stability and lifetime studies: Perovskite solar cells have shown promising efficiency but can suffer from stability issues. Future research can focus on investigating the long-term stability and degradation mechanisms of perovskite solar cells with the CdSe quantum dot/PCBM composite. This can involve accelerated aging tests, environmental exposure studies, and characterization techniques to identify potential degradation pathways and develop strategies to improve the stability and lifetime of these devices.
-
-Device architecture optimization: In addition to the electron transport layer, there are other components and interfaces within perovskite solar cells that can be optimized. Research can explore the optimization of the overall device architecture, including the perovskite layer, hole transport materials, and interfaces with charge extraction layers or electrodes. This can involve material selection, interface engineering, and device fabrication techniques to enhance overall device performance.
-
-These research directions can further advance the field of perovskite solar cells and contribute to the development of more efficient and stable photovoltaic devices.
+Figure 2 (b) describes the working state of the interface. The user will first search the experiment data through AI-supervisor. The user can input research field, paper title of DOI to find the information of the article.
 
 
 **Forcefield Optimization**
