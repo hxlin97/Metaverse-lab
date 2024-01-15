@@ -42,6 +42,7 @@ HTC-VIVE with a pair of joysticks
 Beitong Asura2: BTP-2175S2 LB1
 
 ![image](https://github.com/hxlin97/Metaverse-lab/assets/114046154/0e948aca-e433-4a43-a4f3-5fb54d81fc30)
+
 Figure 1. View of Beitong Asura2 Joysticks.
 
 **Operation Manual**
@@ -78,6 +79,7 @@ The right-hand side shows the bulk and the microscopic state of the solvation pr
 In figure 2 (c), the digitalized state is compared to the real experiment observation in the real timeline. In the initial state, the solid diffuses into the water. During the solvation process, the solids gradually turned small and vanished in the solution, while the color of the solution is commensurate with the real experiments. 
 
 ![image](https://github.com/hxlin97/Metaverse-lab/assets/114046154/438c3c69-2cff-4481-9d34-a76fd61caadb)
+
 Figure 2. Demonstration of the Metaverse interface. (a) General appearance of the interface. (b) Working state of each part. (c) Comparison between real and metaverse state. 
 
 View of perspective
