@@ -35,7 +35,8 @@ For using the trained model:
 For further assistance or queries, please refer to the documentation or contact the project maintainers.
 
 2. **Web Presentation**: Refer to `src/web_utilize.py`. You may use the code `streamlit run src/web_utilize.py`. The expected output is:
-![image](https://github.com/hxlin97/Metaverse-lab/assets/58459755/35a52797-57ee-4e97-a335-e0f28e1e8884)
+![image](https://github.com/hxlin97/Metaverse-lab/assets/58459755/1ac5fb88-0d4f-4667-bb30-2f9a6037c571)
+
 
 You may follow the instruction on this figure to how to manipulate.
 
