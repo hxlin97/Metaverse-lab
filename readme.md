@@ -48,7 +48,9 @@ Beitong Asura2: BTP-2175S2 LB1
 Figure 1. View of Beitong Asura2 Joysticks.
 
 **Operation Manual**
+
 You can refer to the supplementary materials S3 of the article for details.
+
 1.**AI-Supervisor Plugin**: We have added the AI-supervisor plugin as well as the atomic slice generation module. The AI-supervisor region lies at the left-hand side of the of interface. Users can interact with AI-supervisor with their own OpenAI-API key. The user will first search the experiment data through AI-supervisor. The user can input research field, paper title of DOI to find the information of the article.
 
 2.**Forcefield Optimization**: In the middle part, the users adjusted the forcefield Tensor, where the system properties are calculated on the black panel compared to the experiment value. The demonstration described the optimization process of water system. In the liquid properties interface, there are mainly three regions: the Forcefield matrix region; the Option region; and the Benchmark region. The Forcefield matrix region contains a 12×12 matrix, including 144 boxes. Each box represents a matrix element, which value can be arbitrary set through joystick Beitong Asura2, where the left panel is responsible for the value of matrix indices, and the right panel is responsible for shifting between different matrix indices. Adjacent to the forcefield matrix, there is a “Setting” region, which controls the temperature and pressure of the simulation system. This is also controlled by the Beitong Asura2. 
