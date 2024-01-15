@@ -14,6 +14,7 @@ For Unity Interface:
 Unity version: 2022.3.5f1c1
 Python: 3.8.8
 Visual Studio 2022 with Unity development package: Visual Studio Tools for Unity, C# and Visual Basic
+
 Open the folder 'Unityinterface' as project with UnityHub and proper editor (2022.3.5f1c1 or later)
 
 ## Physics-endorsed slice generation model
