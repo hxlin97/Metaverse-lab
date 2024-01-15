@@ -18,7 +18,7 @@ To train the model, follow these steps:
 
 1. **Modify Configuration**: Edit `src/config.py` to update the parameter information as per your requirements.
 
-2. **Preprocessing**: Run `src/preprocessing.serial.py`. This script preprocesses the original `lammpstrj` files. The preprocessing step will output the processed input and output files, which are `feature_inputs.pt` , `atom_coords.pt`, `atom_types.pt`, `box_list.pt` and `target.py`, located in the `/temp_data/` directory. These files are used in the future computaion.
+2. **Preprocessing**: First, open the python file `dataset/sort_atoms.py`, then revise the last line. Currently it is `sort_and_process_file('dump-8.reax.mgNO3', 'mgno3_8.lammpstrj')`, please revise the first parameter as the input trajectory file, and the second parameter as the output filename. This output filename should match the description in `src/config.py`. Run `src/preprocessing.serial.py`. This script preprocesses the original `lammpstrj` files. The preprocessing step will output the processed input and output files, which are `feature_inputs.pt` , `atom_coords.pt`, `atom_types.pt`, `box_list.pt` and `target.py`, located in the `/temp_data/` directory. These files are used in the future computaion.
 
 3. **Model Training**: Execute `src/D4R_AFA_training.py`. This script uses the `feature_input.pt` and `target.py` files for model training. The output of the training process is a model file named `serial_model.pth`, which can be found in the `/pretrained_model` directory.
 
