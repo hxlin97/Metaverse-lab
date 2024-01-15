@@ -20,7 +20,7 @@ Visual Studio 2022 with Unity development package: Visual Studio Tools for Unity
 
 Before running the training of this code, please first place the trajectory file in `dataset` folder. The exact trajectory file is too large and we cannot upload it to github. Current files can only serve as an example. To train the model, follow these steps:
 
-1. **Modify Configuration**: Edit `src/config.py` to update the parameter information as per your requirements.
+1. **Modify Configuration**: Edit `src/config.py` to update the parameter information as per your requirements. We have provided an example, the input trajectory is `dataset/example.lammpstrj`. The corresponding calculated results are `temp_data/example` and `pretrained_model/example.pth`. Notice that this can only serve as an example for utilizing our codes.
 
 2. **Preprocessing**: First, open the python file `dataset/sort_atoms.py`, then revise the last line. Currently it is `sort_and_process_file('dump-8.reax.mgNO3', 'mgno3_8.lammpstrj')`, please revise the first parameter as the input trajectory file, and the second parameter as the output filename. This output filename should match the description in `src/config.py`. Run `src/preprocessing.serial.py`. This script preprocesses the original `lammpstrj` files. The preprocessing step will output the processed input and output files, which are `feature_inputs.pt` , `atom_coords.pt`, `atom_types.pt`, `box_list.pt` and `target.py`, located in the `/temp_data/` directory. These files are used in the future computaion.
 
