@@ -6,6 +6,12 @@ This README provides instructions for setting up and using the code for the AI-e
 ## Requirements: 
 PyTorch v1.11
 
+streamlit
+
+pandas
+
+OR you may use `src/environment.yml`
+
 ## Part 1: the training of our proposed AI model
 
 To train the model, follow these steps:
@@ -23,3 +29,5 @@ For using the trained model:
 1. **Model Prediction Example**: Refer to `src/model_prediction.ipynb`. This notebook demonstrates how to use the model. You need to input the system information file of a specific frame, including `atom_types` and `atom_coords` (the types and coordinates of the atoms). The model will output the atomic coordinates for the next frame. Note that the atom types are assumed to remain constant.
 
 For further assistance or queries, please refer to the documentation or contact the project maintainers.
+
+2. **Web Presentation**: Refer to `src/web_utilize.py`. You may use the code `streamlit run src/web_utilize.py`. 
